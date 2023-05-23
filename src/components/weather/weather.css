@@ -1,0 +1,54 @@
+.temp{
+    font-size: 25px;
+    position: absolute;
+    width: 94%;
+    top: 160px;
+}
+
+.weather{
+    width: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.weather-icon{
+    height: 100px;
+}
+
+.city{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: absolute;
+    font-size: 20px;
+    width: 94%;
+    top: 185px;
+}
+
+.add-info{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 94%;
+    bottom: 15px;
+}
+
+.wraapper-div{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.weather-img{
+    width: 200px;
+}
+
+.svg-inline--fa.fa-droplet{
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.svg-inline--fa.fa-wind{
+    font-size: 30px;
+    margin-right: 5px;
+}
