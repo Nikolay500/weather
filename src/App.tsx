@@ -87,7 +87,8 @@ const App:React.FC = () => {
     }
   }
 
-
+  console.log(weather);
+  
   
   return(
     <div className="app">
