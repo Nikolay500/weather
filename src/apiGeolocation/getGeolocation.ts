@@ -1,5 +1,5 @@
 export const getGeolocation = async () => {
-  const res = await fetch("http://ip-api.com/json/")
+  const res = await fetch("https://ipwho.is/")
   const data = await res.json()
   return data.city
 }
