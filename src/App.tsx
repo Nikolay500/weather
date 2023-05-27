@@ -56,7 +56,7 @@ const App:React.FC = () => {
     }
   })
 
-  const getWeatherFunc = () => {
+  const getWeatherFunc = (city: string) => {
     getWeather(city)
       .then((data) => {
         if (data.cod === 200) {
@@ -73,21 +73,22 @@ const App:React.FC = () => {
     getGeolocation()
       .then((data: string) => {
         setCity(data)
-        getWeatherFunc()
+        getWeatherFunc(data)
       })
   }, [])
   
   const buttonFunc = () => {
-    getWeatherFunc()
+    getWeatherFunc(city)
   }
   
   const keyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.code === "Enter") {
-      getWeatherFunc()
+      getWeatherFunc(city)
+      console.log(weather);
     }
   }
 
-  console.log(weather);
+
   
   
   return(
